@@ -21,6 +21,13 @@ for(let cont = 0; cont < listaDeTeclas.length; cont++){
     }
 }
 
-function tocaSom(IdElementoAudio){
-    document.querySelector(IdElementoAudio).play();
+function tocaSom(elementoAudio){
+    const elemento = document.querySelector(elementoAudio);
+
+    if (elemento != null && elemento.localName === 'audio'){
+        elemento.play();
+    } 
+    else {
+        console.log("elemento não encontrado ou selector inválido!")
+    }
 }
