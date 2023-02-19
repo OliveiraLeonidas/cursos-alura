@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: black;
+    color: #FFFF;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #FFFF;
+    margin-bottom: 2em;
+}
+
+header img {
+    margin: 1rem 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Escolha 1*/
+.container__roadmap, .container__perguntas {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    border: 1px solid #FFFF;
+    border-radius: .3rem;
+}
+
+.container__roadmap__titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.container__roadmap__cards {
+    display: flex;
+    gap: 2.5rem;
+    padding: 2rem;
+}
+
+.container__roadmap__card {
+    width: 50%;
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid #FFFF;
+    border-radius: 0.5rem;
+}
+
+.image{
+    width: 50%;
+    margin-bottom: 1rem;
+}
+.container__roadmap__card__text {
+    text-align: justify;
+    margin: 1rem 0;
+}
+
+.container__roadpmap__card__button{
+    margin: 1rem auto;
+    width: 8rem;
+    height: 2.5rem;
+    display: block;
+}
+
+.container__roadpmap__card__button:hover {
+    background-color: transparent;
+    border: 2px solid #FFFF;
+    border-radius: 0.5rem;
+    color: beige;
+}
+
+.desabilitado {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Outras perguntas - parte 2*/
+.container__perguntas  {
+    border: 1px solid #FFFF;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.texto_pergunta_1 {
+    margin: 1rem 0 1rem 0;
+    font-size: 2rem;
+}
+
+.pergunta1 {
+    display: none;
+}
+
+.resposta1 {
+    margin: 1rem 0;
+}
+
+/*Parte 3*/
+#escolha3 {
+    margin: 1rem 0;
+}
+
+#resposta3 {
+    width: 50%;
+    margin: 0 auto;
+}
