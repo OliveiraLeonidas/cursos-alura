@@ -60,8 +60,9 @@ header {
     background-color: #FFFF;
     border-radius: .4rem;
     border: 1px solid;
+    margin-bottom: 1rem;
 }
-#btn-testar:hover {
+#btnTestar:hover {
     font-weight: 800;
     cursor: pointer;
     background-color: transparent;
