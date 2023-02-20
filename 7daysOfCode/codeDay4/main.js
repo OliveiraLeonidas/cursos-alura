@@ -11,19 +11,18 @@ function start() {
         let tentativa = prompt(`Digite a sua ${i+1}ª tentativa`);
         if(tentativa == numSecreto){
             feedback.innerHTML += '<div>' + `Você acertou, o número é ${numSecreto}` + '</div>';
-            replay()
-            break;
+            //replay()
+            //break;
         }else if (i == 2) {
             feedback.innerHTML += '<div>' + `Você infelizmente não conseguiu dessa vez.` + '</div>';
-            replay()
-            break
+            //replay()
+            //break
         }else if (tentativa != numSecreto){
             alert(`Você errou, tente mais ${cont--}`);
-            replay()
-            break
+            //replay()
         }
     }
-
+    replay()
 }
 
 function replay() {

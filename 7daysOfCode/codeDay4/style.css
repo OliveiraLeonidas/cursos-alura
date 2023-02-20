@@ -62,7 +62,7 @@ header {
     border: 1px solid;
     margin-bottom: 1rem;
 }
-#btnTestar:hover, #btnReplay {
+#btnTestar:hover, #btnReplay:hover {
     font-weight: 800;
     cursor: pointer;
     background-color: transparent;
