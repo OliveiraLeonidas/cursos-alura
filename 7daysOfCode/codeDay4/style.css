@@ -55,14 +55,14 @@ header {
     display: block;
 }
 
-#btnTestar {
+#btnTestar, #btnReplay {
     padding: .5rem 1rem;
     background-color: #FFFF;
     border-radius: .4rem;
     border: 1px solid;
     margin-bottom: 1rem;
 }
-#btnTestar:hover {
+#btnTestar:hover, #btnReplay {
     font-weight: 800;
     cursor: pointer;
     background-color: transparent;
