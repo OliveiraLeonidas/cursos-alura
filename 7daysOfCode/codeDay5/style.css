@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: black;
+    color: #FFFF;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #FFFF;
+    padding: .5rem 0;
+    margin-bottom: 2em;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__box {
+    border: 1px solid #FFFF;
+    border-radius: .2rem;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container__box__jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.container__box__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+li {
+    margin-bottom: 1rem;
+}
