@@ -10,6 +10,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
 }
 
 body {
@@ -78,7 +80,7 @@ body {
 }
 
 .container__descricao{
-    margin-right: 1em;
+    margin-right: 2em;
 }
 .container__descricao__titulo {
     font-weight: 700;
@@ -97,6 +99,82 @@ p.container__descricao__texto {
     margin-bottom: 1em;
 }
 
+p.secundario__texto3 {
+    margin: 0;
+}
+
 .secundario__botao {
     display: inline-block;
+    margin-top: 1em;
+}
+
+.images {
+    width: 80%;
+}
+section.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer h2{
+    font-size: 2.5em;
+    font-family: var(--fonte-principal);
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+div.container__cards {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.container__card {
+    text-align: center;
+    font-weight: 700;
+}
+
+.container__card img {
+    width: 340px;
+    height: 190px;
+}
+
+.legenda {
+    font-size: 1.5rem;
+}
+.logo {
+    padding: 1rem 0;
+    margin: 1rem 0;
+    width: 76px;
+}
+
+.links__footer {
+    padding: 2em 0;
+    font-size: .7rem;
+    width: 100%;
+    text-align: center;
+}
+
+.links__footer a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin: 0.8rem 1rem;
+}
+.links__footer a:hover{
+    color: var(--botao);
+}
+
+.links__footer a:active{
+    color: purple;
+}
+
+
+
+div.direitosReservados {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 16px;
+}
+.texto__footer {
+    text-align: center;
 }
