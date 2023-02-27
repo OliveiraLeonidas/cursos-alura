@@ -1,6 +1,6 @@
 .cabecalho__menu{
     width: 1.5rem;
-    height: 1.5rem;
+    height: 2.3rem;
     background-image: url("../images/menu.svg");
     display: inline-block;
     background-repeat: no-repeat;
@@ -8,17 +8,100 @@
 }
 
 .cabecalho {
-    background-color: var(--cor-header);
+    background-color: var(--cor-branca);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.container_menu, .container_icones {
+.container_menu, 
+.container_icones {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .container_imagens {
     padding: 1rem;
+}
+
+.lista_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__menu__botao:checked~.lista_menu {
+    display: block;
+    transition: 100s;
+    z-index: 2;
+    background: var(--cor-branca);
+    left: 0;
+}
+
+.container__menu__botao{
+    display: none;
+}
+
+.lista_menu_titulo, 
+.lista_menu_item {
+    padding: 1rem;
+    background-color: var(--cor-header);
+}
+
+li.lista_menu_titulo {
+    color: var(--cor-laranja);
+    font-weight: 700;
+}
+
+.lista_menu_link {
+    text-decoration: none;
+    background: var(--cor-azul-gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+
+    
+}
+
+.opcoes, 
+.container_titulo{
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .container_titulo {
+        display: block;
+        font-family: var(--fonte-secundaria);
+        font-size: 1.87rem;
+        font-weight: 400;
+        color: var(--cor-preto);
+    }
+    .container_titulo-negrito {
+        font-weight: 700;
+    }
+
+    .cabecalho__menu {
+        display: none;
+    }
+
+    .opcoes {
+        display: block;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    
+    .opcoes_lista{
+        display: flex;
+        gap: 2rem;
+        /* position: relative; */
+    }
+    
+    .opcoes_item_link {
+        text-decoration: none;
+        color: var(--cor-preto);
+        
+    }
 }

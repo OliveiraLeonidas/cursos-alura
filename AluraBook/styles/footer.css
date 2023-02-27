@@ -1,0 +1,8 @@
+.container {
+    border-top: 1px solid #858585;
+    padding: 1rem 2rem;
+    color: rgba(0, 0, 0, 1);
+    background-color: var(--cor-branca);
+    font-weight: 400;
+}
+

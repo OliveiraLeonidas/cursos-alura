@@ -1,15 +1,28 @@
 @import url("./styles/header.css");
-
+@import url("./styles/banner.css");
+@import url("./styles/carrossel.css");
+@import url("./styles/topicos.css");
+@import url("./styles/newslatter.css");
+@import url("./styles/footer.css");
 
 :root {
     --cor-de-fundo-geral: #C4C4C4;
-    --cor-header: #FFFFFF;
+    --cor-branca: #FFFFFF;
     --cor-laranja: #EB9B00;
+    --cor-preto: rgba(0, 0, 0, 1);
     --cor-azul-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --cor-titulo-livros: ##002F52;
+    --fonte-principal: 'Poppins';
+    --fonte-secundaria: 'Josefin Sans';
+
+    
     
 }
 
 body{
     background-color: var(--cor-de-fundo-geral);
+    font-family: 'Poppins';
     font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
 }   
