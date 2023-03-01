@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+@import url("./reset.css");
+@import url("./header.css");
+
+
+
+:root {
+
+    /* cores gerais */
+    --cor-branco: #FFFFFF;
+    --cor-cinza-claro: #667085;
+    --cor-vermelho: #8E2424;
+    --cor-azul-cinza: #3A404E;
+
+    /* Fontes */
+    --fonte-principal: 'Inter', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
