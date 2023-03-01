@@ -3,6 +3,73 @@
     padding: 1rem 2rem;
     color: rgba(0, 0, 0, 1);
     background-color: var(--cor-branca);
-    font-weight: 400;
+    font-weight: 700;
 }
 
+.container__links {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px){
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 3.5rem 1.5rem;
+        font-family: var(--fonte-principal);
+    }
+
+    .container__links {
+        display: flex;
+        gap: 3.8rem;
+    }
+
+    .container__educacao__titulo,
+    .container__educacao-online__titulo,
+    .container__comunidade__titulo {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: var(--cor-cinza);
+        text-transform: uppercase;
+        padding: 0 0 1.6rem 0;
+
+    }
+
+    .container__educacao__item__link,
+    .container__educacao-online__item__link,
+    .container__comunidade__item__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: .8rem;
+        font-weight: 400;
+    }
+
+    .container__educacao__item,
+    .container__educacao-online__item,
+    .container__comunidade__item {
+        margin: 0 0 1rem 0;
+    }
+
+    .container__educacao__itens__item__img {
+        margin: 0 .5rem 0 0;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .container {
+        padding: 3.5rem 15rem 3.5rem 13rem;
+    }
+
+    .container__links {
+        gap: 11rem;
+    }
+
+    .container__educacao,
+    .container__educacao-online__itens,
+    .container__comunidade__itens {
+        padding-left: 0.5rem;
+        border-left: 1px solid var(--cor-cinza);
+    }
+}

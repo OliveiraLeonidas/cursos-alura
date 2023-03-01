@@ -36,3 +36,51 @@
     background: url('../images/lupa.svg') no-repeat;
     background-position: 2rem;
 }
+
+
+@media screen and (min-width: 1024px) {
+
+    .banner {
+        padding: 5rem;
+    }
+    
+    .banner__titulo {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .banner__texto {
+        font-size: 1.2rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .banner__pesquisa {
+        width: 30rem;
+        height: 3rem;
+    }
+
+    .banner__pesquisa::placeholder {
+        font-size: 1.2rem;
+        background-position: 4rem;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .banner__titulo {
+        font-size: 3.25rem;
+    }
+
+    .banner__texto {
+        font-size: 1.6rem;
+    }
+
+    .banner__pesquisa {
+        width: 35rem;
+        height: 3.5rem;
+    }
+
+    .banner__pesquisa::placeholder {
+        text-align: center;
+        background-position: 6.5rem;
+    }
+}

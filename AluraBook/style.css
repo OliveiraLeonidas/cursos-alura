@@ -10,8 +10,10 @@
     --cor-branca: #FFFFFF;
     --cor-laranja: #EB9B00;
     --cor-preto: rgba(0, 0, 0, 1);
+    --cor-preto-claro: #474646;
     --cor-azul-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
-    --cor-titulo-livros: ##002F52;
+    --cor-titulo-livros: #002F52;
+    --cor-cinza: #858585;
     --fonte-principal: 'Poppins';
     --fonte-secundaria: 'Josefin Sans';
 
