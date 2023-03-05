@@ -1,3 +1,4 @@
+
 .container,
 .container__logo,
 .container__menu,
@@ -10,6 +11,10 @@
     font-family: var(--fonte-principal);
 }
 
+.container {
+    padding: 1.125rem 5rem;
+    justify-content: space-around;
+}
 .container__logo,
 .container__menu,
 .container__login {
@@ -22,10 +27,6 @@
     color: var(--cor-cinza-claro);
 }
 
-.container {
-    padding: 1.125rem 5rem;
-    justify-content: space-around;
-}
 
 div.container__logo{ 
     font-size: 1.125rem;

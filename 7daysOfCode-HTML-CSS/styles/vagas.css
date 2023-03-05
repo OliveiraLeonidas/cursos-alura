@@ -1,0 +1,72 @@
+.container__vagas{
+    padding: 2rem 5rem;
+}
+
+.vagas__talentos {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.vagas__talentos__subtitulo{
+    color: var(--cor-vermelho);
+    font-weight: 500;
+    background: var(--cor-background);
+    border-radius: 1rem;
+    display: inline-block;
+    padding: 0.5rem;
+}
+.vagas__talentos__titulo {
+    font-weight: 600;
+    font-size: 2.25rem;
+    letter-spacing: -0.1rem;
+    color: var(--cor-cinza);
+    margin: 1.2rem 0;
+}
+.vagas__talentos__texto{
+    color: var(--cor-cinza-claro);
+    font-size: 1.25rem;
+}
+
+.vagas__talentos__image{
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.vagas__vagasAbertas, .vagasAbertas__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem 0;
+}
+.vagasAbertas__titulo {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--cor-cinza);
+    margin-bottom: 2rem;
+}
+
+.vagasAbertas__design,
+.vagasAbertas__desenvolvimento {
+    margin: 0 16rem;
+}
+
+.card {
+    padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+    border: 1px solid var(--cor-border);
+    border-radius: 1rem;
+    
+    
+}
+
+.card__titulo {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--cor-cinza);
+    margin-bottom: 2.5rem;
+}
+.card__cargaHoraria,
+.card__faixaSalarial {
+    color: var(--cor-cinza-claro);
+    font-weight: 500;
+    margin: 0 1.5rem 0 0;
+    font-size: 1rem;
+}

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
 @import url("./reset.css");
 @import url("./header.css");
+@import url("./cabecalho.css");
+@import url("./vagas.css");
 
 
 
@@ -11,6 +13,10 @@
     --cor-cinza-claro: #667085;
     --cor-vermelho: #8E2424;
     --cor-azul-cinza: #3A404E;
+    --cor-cinza: #101828;
+
+    --cor-background: rgba(142, 36, 36, 0.05);
+    --cor-border: #EAECF0;
 
     /* Fontes */
     --fonte-principal: 'Inter', sans-serif;

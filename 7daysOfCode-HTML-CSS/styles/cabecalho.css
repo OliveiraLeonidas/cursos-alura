@@ -1,0 +1,62 @@
+.container__cabecalho {
+    padding: 0rem 5rem;
+}
+
+.container__cabecalho__sobre{
+    padding: 2.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__cabecalho__sobre__titulo{
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    line-height: 2rem;
+    color: var(--cor-vermelho);
+}
+
+.container__cabecalho__sobre__subtitulo {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--cor-cinza);
+    margin: 1.5rem 0;
+}
+
+.container__cabecalho__sobre__texto {
+    width: 60%;
+    padding: 1.2rem .2rem;
+    font-size: 1.25rem;
+    color: var(--cor-cinza-claro);
+    text-align: center;
+}
+
+/* Cards */
+
+.container__indicadores {
+    display: flex;
+    padding: 4rem 5rem;
+    gap: 2rem;
+}
+
+.indicador {
+    display: flex;
+    gap: 1rem 0;
+    flex-direction: column;
+}
+
+.indicador__numero {
+    font-size: 3.75rem;
+    font-weight: 600;
+    color: var(--cor-vermelho);
+}
+.indicador__titulo{
+    font-size: 1.125rem;
+    color: var(--cor-cinza);
+    font-weight: 500;
+}
+
+.indicador__texto{
+    color: var(--cor-cinza-claro);
+}
