@@ -1,0 +1,130 @@
+/* MOBILE SIZE */
+#header {
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 128px;
+    width: 100%;
+    font-family: var(--fonte-raleway);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+
+#menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 128px;
+    right: 0px;
+    background: var(--cor-azul-escuro);
+    z-index: 1000;
+    height: 0;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+#nav.active #menu {
+    height: calc(100vh - 128px);
+    visibility: visible;
+    overflow-y: auto;
+}
+.container__menu__item {
+    padding: 0rem 1rem;
+}
+
+#menu a {
+    /* display: inline-block; */
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid var(--cor-branco);
+}
+
+
+#btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#hamburger {
+    border-top: 2px solid;
+    width: 20px;
+}
+
+#hamburger::after,
+#hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: currentColor;
+    transition: .3s;
+    position: relative;
+}
+
+#nav.active #hamburger {
+    border-top-color: transparent;
+}
+
+#nav.active #hamburger::before {
+    transform: rotate(135deg);
+    color: var(--cor-branco);
+}
+
+#nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+    
+}
+
+.container__menu__item-link:hover {
+    background-color: var(--cor-azul-claro);
+}
+
+/* TABLET */
+
+@media screen and (min-width: 720px) {
+    
+    #header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #menu {
+        position: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: visible;
+        width: auto;
+        height: auto;
+        
+    }
+    
+    #menu a {
+        display: block;
+        padding: .5rem;
+        border: none;
+    }
+    
+    #btn-mobile {
+        display: none;
+    }
+}
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 1440px) {
+    #header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
