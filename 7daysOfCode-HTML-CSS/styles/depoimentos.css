@@ -1,0 +1,34 @@
+.container__depoimentos {
+    padding: 2rem 5rem;
+    font-family: var(--fonte-principal);
+}
+
+.depoimento {
+   border: 1px solid #000000;
+   background: rgba(196, 25, 25, 0.03);
+   border-radius: 1rem;
+   padding: 4rem;
+   text-align: center;
+}
+
+.depoimentos__titulo {
+    font-weight: 600;
+    color: var(--cor-vermelho);
+}
+
+.depoimentos__texto{
+    font-weight: 500;
+    font-size: 2.25rem;
+    letter-spacing: -0.02em;
+    margin: 1rem 0 2rem 0 ;
+}
+
+.profile__name{
+    color: var(--cor-cinza);
+    font-weight: 500;
+    margin: 1rem 0 0.5rem 0;
+}
+.profile__job{
+    color: var(--cor-cinza-claro);
+    font-weight: 500;
+}
