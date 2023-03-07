@@ -1,0 +1,54 @@
+.container__footer{
+    background: #F9FAFB;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+    margin-top: 5rem;
+    text-align: center;
+    font-family: var(--fonte-principal);
+}
+
+.footer__box__titulo {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--cor-azul-cinza);
+}
+
+.footer__box__texto {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cor-cinza-claro);
+    margin: 1.25rem 0 2rem 0;
+}
+
+.footer__box__cadastrar{
+    text-align: center;
+    margin: 0 0 2rem 0 ;
+    font-family: var(--fonte-principal);
+}
+
+.footer__box__cadastrar input {
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+}
+
+.footer__box__cadastrar input::placeholder {
+    padding: 5px;
+    font-family: var(--fonte-principal);
+}
+
+.footer__box__cadastrar button {
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    border: none;
+    color: var(--cor-branco);
+    background: var(--cor-vermelho);
+}
+
+.direitosReservados {
+    color: #98A2B3;
+    font-weight: 400;
+}
