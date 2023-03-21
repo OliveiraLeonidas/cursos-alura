@@ -1,0 +1,171 @@
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 34px;
+}
+
+/* CATEGORIAS */
+.categorias__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.destaques {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.destaques__barra {
+    flex-grow: 1;
+}
+
+
+/* EVENTOS */
+
+.eventos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.eventos__item {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+/*  AGENDA */
+
+.agenda__lista {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+    justify-content: center;
+}
+
+.agenda__item{
+    flex-grow: 1;
+}
+
+/* RODAPE */
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape__logo {
+    align-self: end;
+}
+
+@media(min-width: 720px) {
+    /* CABECALHO */
+    .menu {
+        column-gap: 75px;
+    }
+
+    .categorias__lista {
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+    }
+
+    /* EVENTOS  */
+    .eventos__lista {
+        justify-content: end;
+    }
+
+    /* AGENDA EVENTOS */
+    .agenda__lista{
+        justify-content: end;
+    }
+}
+
+@media(min-width: 1024px) {
+
+    .categorias__item {
+        flex: auto;
+    }
+
+    .eventos__lista {
+        justify-content: space-between;
+    }
+    
+    .eventos__item {
+        max-width: 215px;
+        max-height: 450px;
+
+    }
+
+     /* AGENDA EVENTOS */
+     .agenda__lista{
+        justify-content: space-between;
+    }
+
+    ul li.agenda__item {
+        width: 295px;
+    }
+
+}
+
+@media(min-width: 1440px) {
+
+    .menu {
+        column-gap: 105px;
+        flex-wrap: nowrap;
+    }
+
+    .menu__item:nth-child(1) {
+        order: 1;
+    }
+    .menu__item:nth-child(2) {
+        order: 3;
+    }
+    .menu__item:nth-child(3) {
+        order: 4;
+    }
+    .menu__item:nth-child(4) {
+        order: 5;
+    }
+    .menu__item:nth-child(5) {
+        order: 2;
+    }
+
+    .categorias__imagem {
+        width: 100%;
+        max-height: 224px;
+    }
+
+    .eventos__lista {
+        justify-content: end;
+    }
+
+    .eventos__item {
+        flex-grow: 1;
+        max-width: 300px;
+    } 
+
+    /* AGENDA EVENTOS */
+    .agenda__lista{
+        justify-content: end;
+        column-gap: 3.5rem;
+    }
+
+    .agenda__item 
+
+    .agenda__item img {
+        height: 100%;
+    }
+
+
+    .rodape__logo {
+        align-self: flex-start;
+    }
+} 
