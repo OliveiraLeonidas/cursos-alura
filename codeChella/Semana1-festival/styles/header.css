@@ -4,14 +4,13 @@
     color: var(--cor-branco);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 128px;
     width: 100%;
     font-family: var(--fonte-raleway);
     font-weight: 700;
     font-size: 1.25rem;
 }
-
 
 #menu {
     display: block;
@@ -125,6 +124,7 @@
 @media screen and (min-width: 1440px) {
     #header {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 7.5rem;
     }
 }
