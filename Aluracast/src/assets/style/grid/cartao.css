@@ -34,3 +34,8 @@
     grid-column: 2/3;
     grid-row: 3/4;
 }
+
+.secao-vertical .cartao {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
