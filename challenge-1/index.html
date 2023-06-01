@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Javascript, Syntax-hightlight">
+    <meta name="description" content="Alura Challenge-1">
+    <meta name="author" content="Leonidas Oliveira">
+    <link rel="stylesheet" href="./style/styles.css">
+    <title>AluraDev</title>
+</head>
+<body>
+    <header id="header" class="container">
+        <!-- Area do logo-->
+        <div id="container__logo">Alura
+            <span class="logo-white">Dev</span>
+        </div>
+        <!-- Area do menu mobile-->
+        <nav id="nav" class="container__menu">
+            <div class="container__menu_btns">
+                <!--<input type="search" name="search" id=""> -->
+                <button>
+                    <span id="hamburguer"></span>
+                </button>
+            </div>
+            <ul class="menu" role="menu" class="container__menu__items">
+                <li class="container__menu__item">
+                    <a href="/" class="container__menu__item-link">Editor de código</a>
+                </li>
+                <li class="container__menu__item">
+                    <a href="" class="container__menu__item-link"> Comunidade</a>
+                </li>
+                <li
+                class="container__menu__item">
+                <a href="" class="container__menu__item-link">Leonidas</a>
+            </li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <section class="editArea">
+        <div class="code">
+            <div class="btn">
+                <span class="btn-red"></span>
+                <span class="btn-yellow"></span>
+                <span class="btn-green"></span>
+            </div>
+            <code id="codeArea">
+            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+            
+            const unfold = (f, seed) => {
+              const go = (f, seed, acc) => {
+                const res = f(seed)
+                return res ? go(f, res[1], acc.concat([res[0]])) : acc
+              }
+              return go(f, seed, [])}
+
+              const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+            
+            const unfold = (f, seed) => {
+              const go = (f, seed, acc) => {
+                const res = f(seed)
+                return res ? go(f, res[1], acc.concat([res[0]])) : acc
+              }
+              return go(f, seed, [])}
+            </code>
+        </div>
+        <button class="Syntax-hightlight">
+            visualizar com o highlight
+        </button>
+    </section>
+    
+    <section class="projeto">
+        <form action="" class="projeto__form">
+
+            <div class="title">seu projeto</div>
+            <input type="text" class="projeto__form-input" name="nomeProjeto" id="nomeProjeto" placeholder="Nome do seu projeto">
+            <textarea name="" class="projeto__form-input" placeholder="Descrição do seu projeto" id="descricao"></textarea>
+            
+            <div class="title">personalização</div>
+            <select  name="" id="" class="projeto__form-input">
+                <option value="javascript" selected>JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Cplusplus">C++</option>
+            </select>
+            
+            <div class="tag">
+                <div class="blockColor"></div>
+            </div>
+            <button type="submit" class="projeto__form-btn">salvar projeto</button>
+        </form>
+    </section>
+
+</body>
+</html>

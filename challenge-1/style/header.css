@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#container__logo {
+    font-family: var(--font-primary);
+    font-size: var(--font-title-size);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    color: #FFFF;
+}
+
+.logo-white {
+    font-family: var(--font-primary);
+    font-style: normal;
+    text-transform: uppercase;
+    background-color: #FFFF;
+    color: #051D3B;
+    border-radius: 0.2rem;
+    padding: 0.1rem;
+}
+#nav {
+    display: none;
+}
